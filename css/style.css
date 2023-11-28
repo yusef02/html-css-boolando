@@ -5,3 +5,32 @@
   margin: 0;
   padding: 0;
 }
+
+/* debug */
+
+body * {
+  border: 1px dashed black;
+}
+
+/* GENERICS */
+
+.container {
+  width: 1080px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+
+.hdrpage {
+  /* debug */
+  background-color: coral;
+  height: 100px;
+}
+
+.hdrpage .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
