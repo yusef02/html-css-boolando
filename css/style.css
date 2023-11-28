@@ -48,7 +48,23 @@ main .container {
 
 main .container .article {
   min-width: calc(100% / 3 - 20px);
-  min-height: 400px;
   margin: 10px;
+  /* debug */
+  min-height: 400px;
   background-color: bisque;
+}
+
+/* FOOTER */
+
+.ftrpage {
+  /* debug */
+  background-color: #1a1a1a;
+  height: 100px;
+}
+
+.ftrpage .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
 }
