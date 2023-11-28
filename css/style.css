@@ -34,3 +34,21 @@ body * {
   justify-content: space-between;
   align-items: center;
 }
+
+/* MAIN */
+
+main {
+  padding: 40px 0;
+}
+
+main .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .container .article {
+  min-width: calc(100% / 3 - 20px);
+  min-height: 400px;
+  margin: 10px;
+  background-color: bisque;
+}
