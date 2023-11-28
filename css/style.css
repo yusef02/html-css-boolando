@@ -40,6 +40,7 @@
   padding: 10px 0;
   color: white;
   background-color: #ff6900;
+  /* posizionamento fisso del header */
   position: sticky;
   top: 0;
   z-index: 1;
@@ -96,10 +97,12 @@ main .container .article {
   background-color: bisque; */
 }
 
-.article .article--desc span {
-  display: inline-block;
-  margin-right: 0.5rem;
+.article {
+  position: relative;
 }
+
+/* sezione etichette e sconti */
+/* ho preso l'iniziativa di creare delle classi per sconti o spciali creando il contenuto qua sul css e affisarli sul div, anziche aggiungere degli span a qust ultimo. sono conscio che questo è il modo più errato per fare un esperimento del genere dato si può manipolare il contenuto in js */
 
 .sale-30::before {
   content: "30%";
@@ -124,10 +127,12 @@ main .container .article {
   padding: 2px 5px;
 }
 
-.article {
-  position: relative;
+.article .tagged {
+  position: absolute;
+  top: 80%;
 }
 
+/* bottone mi piace */
 .article .article--like-btn {
   display: inline-block;
   width: 3rem;
@@ -142,9 +147,10 @@ main .container .article {
   right: 10px;
 }
 
-.article .tagged {
-  position: absolute;
-  top: 80%;
+/* descrizione articolo */
+.article .article--desc span {
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 .article .article--desc .current-price {
@@ -162,6 +168,7 @@ main .container .article {
   /* debug */
   background-color: #1a1a1a;
   height: 100px;
+  color: white;
 }
 
 .ftrpage .container {
@@ -169,4 +176,22 @@ main .container .article {
   justify-content: space-between;
   align-items: center;
   color: white;
+}
+
+/* footer infos */
+h1 {
+  font-size: 1.2rem;
+}
+
+.ftrpage .ftr--info a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+/* footer socials */
+.ftrpage .ftr--socials i {
+  display: inline-block;
+  padding: 3px;
 }
