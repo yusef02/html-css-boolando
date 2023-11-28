@@ -195,3 +195,16 @@ h1 {
   display: inline-block;
   padding: 3px;
 }
+
+/* BONUS */
+/* aggiungo qui in fondo l'effeto hover dagli articolo che cambiano immagine */
+.article img[src$="b.webp"] {
+  display: none;
+}
+.article:hover img:first-of-type {
+  display: none;
+}
+.article:hover img:last-of-type {
+  display: inline-block;
+}
+/* ho inserito le imagini a seguire delle prime nel html e settato il display a none, quando poi si fa hover sull'articolo si toglie la prima con un display non e con un altro selettore far ricomparire l'altra */
