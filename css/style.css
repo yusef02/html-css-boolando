@@ -98,6 +98,61 @@ main .container .article {
   margin-right: 0.5rem;
 }
 
+.sale-30::before {
+  content: "30%";
+  color: white;
+  background-color: red;
+  padding: 2px 5px;
+  margin-right: 3px;
+}
+
+.sale-50::before {
+  content: "50%";
+  color: white;
+  background-color: red;
+  padding: 2px 5px;
+  margin-right: 3px;
+}
+
+.sostenibile::after {
+  content: "sostenibilità";
+  color: white;
+  background-color: green;
+  padding: 2px 5px;
+}
+
+.article {
+  position: relative;
+}
+
+.article .article--like-btn {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: lightgrey;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.article .tagged {
+  position: absolute;
+  top: 80%;
+}
+
+.article .article--desc .current-price {
+  color: red;
+}
+
+.article .article--desc .previous-price {
+  color: rgb(68, 68, 68);
+  text-decoration: line-through;
+}
+
 /* FOOTER */
 
 .ftrpage {
